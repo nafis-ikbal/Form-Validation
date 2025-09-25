@@ -2,6 +2,10 @@
 
 A modern, responsive form validation system built with vanilla JavaScript, TailwindCSS, and DaisyUI. This project demonstrates real-time form validation with user-friendly feedback and smooth animations.
 
+## 🌐 Live Preview
+
+Check out the live demo: [Form Validation](https://form-validation-0.vercel.app/)
+
 ## ✨ Features
 
 - **Real-time Validation**: Form fields are validated as the user types
