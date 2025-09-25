@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.min.css">
+  <title>Form Validation</title>
+</head>
+<body class="bg-stone-300 h-screen flex items-center justify-center">
+  <div class="bg-white w-[36rem] rounded-xl px-8 py-4">
+    <h2 class="text-4xl font-semibold tracking-wider text-center mb-2">Form Validation</h2>
+    <form>
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend text-base">Enter your Full Name:</legend>
+        <input type="text" class="input w-full" placeholder="eg: nafis ikbal" id="name"/>
+        <span class="text-sm text-red-500"></span>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend text-base">Enter your Phone Number:</legend>
+        <input type="tel" class="input w-full" placeholder="eg: 01800000000" id="phone"/>
+        <span class="text-sm text-red-500"></span>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend text-base">Enter your Email Adress:</legend>
+        <input type="email" class="input w-full" placeholder="eg: demo.23@email.com" id="email"/>
+        <span class="text-sm text-red-500"></span>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend text-base">Drop your message here:</legend>
+        <textarea class="textarea w-full" placeholder="some comments" id="message"></textarea>
+        <span class="text-sm text-red-500"></span>
+      </fieldset>
+
+      <div class="flex justify-center mt-2">
+        <button class="btn btn-lg btn-accent">Submit</button>
+      </div>
+
+      <div role="alert" class="alert alert-error mt-3 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span class="text-base italic tracking-wider">Please fill the required field...</span>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.all.min.js"></script>
+  <script src="/src/script.js"></script>
+</body>
+</html>
